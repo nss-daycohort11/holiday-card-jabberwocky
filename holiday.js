@@ -1,61 +1,36 @@
-var HolidayGreeting = (function(){
+//Link jQuery
+$(document).ready(function() {
+
+//Starting the button	
+	$("#button").click(function() {
+		var userMessage = $("#text").val();
+
+		var target = $("#target option:selected").val();
+
+		if (target === "Klingon")
+		{
+			HolidayGreeting.translateToKlingon(userMessage);
+	 		console.log("K");
+		};
+		if (target === "Jabberwocky")
+		{
+
+		};
+		if (target === "Elvish")
+		{
+			HolidayGreeting.translateToElvish(userMessage);
+	 		console.log("E");
+		};
+	});
+});
+
 	
-	var klingon = {
-		
-		"happy": "Quch",
-		"new": "chu'",
-		"year": "DIS"
 
-	};
-	console.log(klingon);
-	var elvish = {
-		
-		"happy": "Iderin",
-		"new": "eden",
-		"year": "'elir"
+	// james' help
 
-	};
-	var jabberwocky = {
-
-		"happy": "frabjous",
-		"new": "warrble",
-		"year": "tove"
+	// click (function() {
+	// 	var klingon = $("select").val();
+	// 	holiday[klingon](input)
+	// })	
 
 
-	};
-	return {
-
-
-
-
-
-
-
-
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-return HolidayGreeting;
-
-})();
-console.log("HolidayGreeting");

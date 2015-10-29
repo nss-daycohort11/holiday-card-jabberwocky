@@ -8,17 +8,16 @@
   </head>
 
   <body>
-    <nav></nav>
 
-    <textarea></textarea>
+    <textarea id="text"></textarea>
 
-    <select> 
-      <option>Klingon</option>
-      <option>Elvish</option>
-      <option>Jabberwocky</option>
+    <select id ="target"> 
+      <option id = "klingon">Klingon</option>
+      <option id = "elvish">Elvish</option>
+      <option id = "jabberwocky">Jabberwocky</option>
     </select>
 
-    <button>Translate</button>
+    <input type = "submit" id = "button" value = "Translate">
 
     <section>
     Put translation here.
@@ -33,10 +32,14 @@
     </article>
 
     <footer></footer>
-
+      <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
       <script src="holiday.js"></script>
+<!-- 
       <script src="klingon.js"></script>
-      <script src="jabberwock.js"></script>
+ -->
+ <!-- 
+      <script src="jabberwocky.js"></script>
+ -->
       <script src="elvish.js"></script>
 
   </body>
